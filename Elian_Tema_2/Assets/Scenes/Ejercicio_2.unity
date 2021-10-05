@@ -410,7 +410,6 @@ GameObject:
   - component: {fileID: 599832811}
   - component: {fileID: 599832810}
   - component: {fileID: 599832809}
-  - component: {fileID: 599832813}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -494,18 +493,6 @@ Transform:
   m_Father: {fileID: 1219578609}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &599832813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599832808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a42d8e7f8b0e92944a3153d63f59150c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &673868228
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1219578609}
   - component: {fileID: 1219578608}
+  - component: {fileID: 1219578610}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -823,6 +811,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42d8e7f8b0e92944a3153d63f59150c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: "\xA1Brum, brum!"
+  name: Coche
+  numberWheels: 4
+  hasSiren: 0
 --- !u!4 &1219578609
 Transform:
   m_ObjectHideFlags: 0
@@ -842,6 +834,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1219578610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219578607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6babb464c366bc04db833628ddbf7e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Elian
+  enemyName: 'Elian '
+  x: 5
+  y: 3
+  z: 3
+  isRaining: 1
 --- !u!1 &1284773447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,7 +1056,6 @@ GameObject:
   - component: {fileID: 1498179772}
   - component: {fileID: 1498179771}
   - component: {fileID: 1498179770}
-  - component: {fileID: 1498179774}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1130,18 +1139,6 @@ Transform:
   m_Father: {fileID: 2135045361}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1498179774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498179769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a42d8e7f8b0e92944a3153d63f59150c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1702234073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,6 +1452,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42d8e7f8b0e92944a3153d63f59150c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: "\xA1Nino, nino!"
+  name: Ambulancia
+  numberWheels: 4
+  hasSiren: 1
 --- !u!4 &2135045361
 Transform:
   m_ObjectHideFlags: 0
