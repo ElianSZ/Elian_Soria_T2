@@ -792,6 +792,7 @@ GameObject:
   - component: {fileID: 1219578609}
   - component: {fileID: 1219578608}
   - component: {fileID: 1219578610}
+  - component: {fileID: 1219578611}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -815,6 +816,8 @@ MonoBehaviour:
   name: Coche
   numberWheels: 4
   hasSiren: 0
+  isOn: 1
+  gasoline: 8.25
 --- !u!4 &1219578609
 Transform:
   m_ObjectHideFlags: 0
@@ -846,12 +849,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6babb464c366bc04db833628ddbf7e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Elian
-  enemyName: 'Elian '
-  x: 5
-  y: 3
-  z: 3
   isRaining: 1
+  isCold: 1
+--- !u!114 &1219578611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219578607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a4f73a443a4a84b947daf314cb21eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  year: 100
 --- !u!1 &1284773447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,6 +1468,8 @@ MonoBehaviour:
   name: Ambulancia
   numberWheels: 4
   hasSiren: 1
+  isOn: 0
+  gasoline: 49.75
 --- !u!4 &2135045361
 Transform:
   m_ObjectHideFlags: 0
