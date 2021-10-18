@@ -791,8 +791,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1219578609}
   - component: {fileID: 1219578608}
-  - component: {fileID: 1219578610}
   - component: {fileID: 1219578611}
+  - component: {fileID: 1219578610}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -849,8 +849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6babb464c366bc04db833628ddbf7e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isRaining: 1
-  isCold: 1
 --- !u!114 &1219578611
 MonoBehaviour:
   m_ObjectHideFlags: 0

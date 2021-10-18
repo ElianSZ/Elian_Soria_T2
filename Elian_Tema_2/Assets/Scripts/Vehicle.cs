@@ -82,6 +82,50 @@ public class Vehicle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.localScale += Vector3.right;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.localScale -= Vector3.right;
+        }
+
+        /*
+        if (isOn == true)
+        {
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                transform.position += Vector3.right;
+            }
+
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                transform.position -= Vector3.right;
+                // transform.position += Vector3.left;
+            }
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                transform.position += Vector3.up;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                transform.position -= Vector3.up;
+                // transform.position += Vector3.down;
+            }
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                transform.position += Vector3.forward;
+            }
+
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                transform.position -= Vector3.forward;
+                // transform.position += Vector3.back;
+            }
+            */
     }
 }
